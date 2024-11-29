@@ -31,3 +31,12 @@ app.get('/register.html', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// Handle the form submission
+app.post('/post', (req, res) => {
+    const { itemTitle, itemDescription, itemPrice } = req.body;
+    console.log(`Item Posted: ${itemTitle}, ${itemDescription}, ₹${itemPrice}`);
+    res.send('Item Posted Successfully');
+});

@@ -1,0 +1,25 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore environment variables file
+.env
+
+# Ignore VSCode settings folder
+.vscode/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore build or dist folder (if you have them)
+build/
+dist/
+
+# Ignore IDE-specific folders (JetBrains/IntelliJ)
+.idea/
+
+# Ignore temporary files
+*.tmp
