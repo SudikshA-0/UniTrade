@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post an Item</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <div class="logo">
+            <h1>Post an Item</h1>
+        </div>
+    </header>
+    
+    <main>
+        <form action="/post" method="POST">
+            <label for="item-title">Item Title</label>
+            <input type="text" id="item-title" name="item-title" required>
+
+            <label for="item-description">Description</label>
+            <textarea id="item-description" name="item-description" required></textarea>
+
+            <label for="item-price">Price</label>
+            <input type="number" id="item-price" name="item-price" required>
+
+            <button type="submit">Post Item</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Campus Marketplace © 2024</p>
+    </footer>
+</body>
+</html>
