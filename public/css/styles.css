@@ -1,107 +1,472 @@
-/* General Reset */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #1c1c1c;
-    color: #f4f4f4;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(18, 18, 18); /* Dark background */
+    color: rgb(255, 255, 255); /* White text */
+    line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: #f4f4f4;
-}
-
-a:hover {
-    color: #ff9800;
-}
-
-/* Header */
+/* Navigation Styles */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: rgb(31, 31, 31); /* Dark grey background */
 }
 
-header .logo h1 {
-    font-size: 2rem;
-    color: #fff;
+header .logo img {
+    max-height: 50px;
 }
 
-header nav a {
-    margin-left: 20px;
-    color: #f4f4f4;
-    font-size: 1rem;
+nav a {
+    color: rgb(255, 255, 255); /* White text */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
 }
 
-header nav a:hover {
-    color: #ff9800;
+nav a:hover {
+    color: rgb(255, 75, 43); /* Accent color on hover */
 }
 
-/* Main Section */
-main {
-    padding: 20px;
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: rgb(26, 26, 26); /* Darker grey background */
+}
+
+.hero .hero-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: rgb(255, 75, 43); /* Bright accent color */
+    color: rgb(255, 255, 255); /* White text */
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: rgb(224, 64, 47); /* Slightly darker accent on hover */
+}
+
+.hero-image img {
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* Categories Section */
+.categories {
+    padding: 40px 20px;
+    background-color: rgb(33, 33, 33); /* Slightly lighter grey */
     text-align: center;
 }
 
-h2 {
-    color: #ff9800;
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-.featured-items {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+.category-item {
+    padding: 20px;
+    background-color: rgb(51, 51, 51); /* Medium dark grey */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.category-item img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.category-item p {
+    font-size: 18px;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: rgb(31, 31, 31); /* Dark grey footer */
+    text-align: center;
+}
+/* Browse Section Styles */
+.browse {
+    padding: 40px 20px;
+    background-color: rgb(33, 33, 33); /* Slightly lighter grey */
+    text-align: center;
+}
+
+.browse h2 {
+    color: rgb(255, 255, 255); /* White text */
+    margin-bottom: 30px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter select, .filter button {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: rgb(51, 51, 51); /* Dark grey */
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.filter button {
+    cursor: pointer;
+    background-color: rgb(255, 75, 43); /* Accent color */
+}
+
+.filter button:hover {
+    background-color: rgb(224, 64, 47); /* Slightly darker accent on hover */
+}
+
+/* Item Card Styles */
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
 }
 
 .item-card {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 200px;
+    background-color: rgb(51, 51, 51); /* Dark grey */
+    border-radius: 8px;
+    padding: 20px;
+    color: rgb(255, 255, 255); /* White text */
 }
 
 .item-card img {
     max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.item-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.item-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-card .description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.item-card .contact-seller {
+    background-color: rgb(255, 75, 43); /* Accent color */
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.item-card .contact-seller:hover {
+    background-color: rgb(224, 64, 47); /* Slightly darker accent on hover */
+}
+
+/*for post an item page
+
+/* Post an Item Section */
+.post-item {
+    padding: 40px 20px;
+    background-color: rgb(33, 33, 33); /* Slightly lighter grey */
+    text-align: center;
+}
+
+.post-item h2 {
+    color: rgb(255, 255, 255); /* White text */
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+    background-color: rgb(51, 51, 51); /* Dark grey */
+    padding: 30px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+
+form label {
+    color: rgb(255, 255, 255); /* White text */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(66, 66, 66); /* Slightly darker grey */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 120px;
+}
+
+.post-button {
+    background-color: rgb(255, 75, 43); /* Accent color */
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.post-button:hover {
+    background-color: rgb(224, 64, 47); /* Slightly darker accent on hover */
+}
+
+/*login-signup page 
+
+/* Login / Signup Section */
+.login-signup {
+    padding: 40px 20px;
+    background-color: rgb(33, 33, 33); /* Slightly lighter grey */
+    text-align: center;
+}
+
+.login-signup h2 {
+    color: rgb(255, 255, 255); /* White text */
+    margin-bottom: 30px;
+}
+
+.auth-form {
+    background-color: rgb(51, 51, 51); /* Dark grey */
+    padding: 30px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+.auth-form label {
+    color: rgb(255, 255, 255); /* White text */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(66, 66, 66); /* Slightly darker grey */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    background-color: rgb(255, 75, 43); /* Accent color */
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.auth-form button:hover {
+    background-color: rgb(224, 64, 47); /* Slightly darker accent on hover */
+}
+
+.toggle-form {
+    background: none;
+    border: none;
+    color: rgb(255, 75, 43); /* Accent color */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.toggle-form:hover {
+    color: rgb(224, 64, 47); /* Slightly darker accent on hover */
+}
+ 
+
+/* browse item section*/
+
+/* Browse Items Section */
+.browse-items {
+    padding: 40px 20px;
+    background-color: rgb(33, 33, 33); /* Slightly lighter grey */
+    text-align: center;
+}
+
+.browse-items h2 {
+    color: rgb(255, 255, 255); /* White text */
+    margin-bottom: 30px;
+}
+
+.filters {
+    margin-bottom: 30px;
+}
+
+.filters label, .filters select, .filters button {
+    color: rgb(255, 255, 255); /* White text */
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.filters select, .filters button {
+    padding: 10px;
+    background-color: rgb(66, 66, 66); /* Slightly darker grey */
+    border-radius: 5px;
+    border: none;
+}
+
+.filters button:hover {
+    background-color: rgb(255, 75, 43); /* Accent color */
+    cursor: pointer;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.item-card {
+    background-color: rgb(51, 51, 51); /* Dark grey */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.item-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-card h3 {
+    color: rgb(255, 255, 255); /* White text */
+    margin: 10px 0;
+}
+
+.item-card p {
+    color: rgb(190, 190, 190); /* Light grey text */
+    font-size: 14px;
+}
+
+.item-card .price {
+    color: rgb(255, 75, 43); /* Accent color */
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-btn {
+    background-color: rgb(255, 75, 43); /* Accent color */
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-btn:hover {
+    background-color: rgb(224, 64, 47); /* Slightly darker accent on hover */
+}
+
+
+/* Register Form Section */
+.register-form {
+    padding: 40px 20px;
+    background-color: rgb(33, 33, 33); /* Slightly lighter grey */
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
     border-radius: 10px;
 }
 
-.item-title {
-    color: #ff9800;
-    font-weight: bold;
-    margin-top: 10px;
+.register-form h2 {
+    color: rgb(255, 255, 255); /* White text */
+    margin-bottom: 30px;
 }
 
-.item-price {
-    color: #fff;
-    margin-top: 5px;
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.buy-btn {
-    background-color: #ff9800;
-    color: white;
+.form-group label {
+    color: rgb(255, 255, 255); /* White text */
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
     padding: 10px;
+    margin-top: 5px;
+    background-color: rgb(51, 51, 51); /* Dark grey */
+    color: rgb(255, 255, 255); /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 2px solid rgb(255, 75, 43); /* Accent color */
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(255, 75, 43); /* Accent color */
+    color: rgb(255, 255, 255);
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.buy-btn:hover {
-    background-color: #ff5722;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
+.btn:hover {
+    background-color: rgb(224, 64, 47); /* Slightly darker accent on hover */
 }

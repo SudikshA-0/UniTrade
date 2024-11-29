@@ -3,33 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post an Item</title>
-    <link rel="stylesheet" href="/public/css/styles.css">
+    <title>Post an Item - UniTrade</title>
+    <link rel="stylesheet" href="/public/css/styles.css"> <!-- Link to styles -->
 </head>
-<body class="dark-mode">
+<body>
+    <!-- Navigation Bar (Reusing from the Landing Page) -->
     <header>
         <div class="logo">
-            <h1>Post an Item</h1>
+            <img src="/public/images/logo.png" alt="UniTrade Logo" width="120"> <!-- Replace with your logo image -->
         </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="post-item.html">Post an Item</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Create a New Account</a>
+
+        </nav>
     </header>
-    
-    <main>
-        <form action="/post" method="POST">
-            <label for="item-title">Item Title</label>
-            <input type="text" id="item-title" name="item-title" required>
 
-            <label for="item-description">Description</label>
-            <textarea id="item-description" name="item-description" required></textarea>
+    <!-- Post an Item Form -->
+    <section class="post-item">
+        <h2>Post Your Item</h2>
+        <form action="#" method="post">
+            <label for="title">Item Title</label>
+            <input type="text" id="title" name="title" required>
 
-            <label for="item-price">Price</label>
-            <input type="number" id="item-price" name="item-price" required>
+            <label for="category">Category</label>
+            <select id="category" name="category">
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+                <option value="carpool">Carpool</option>
+            </select>
 
-            <button type="submit">Post Item</button>
+            <label for="description">Description</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="image">Item Image</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit" class="post-button">Post Item</button>
         </form>
-    </main>
+    </section>
 
+    <!-- Footer Section (Reusing from the Landing Page) -->
     <footer>
-        <p>Campus Marketplace © 2024</p>
+        <p>UniTrade © 2024 - All Rights Reserved</p>
     </footer>
 </body>
 </html>
