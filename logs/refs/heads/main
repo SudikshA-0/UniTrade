@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 ecc6ec55370ec3962a0f70da3fcf4b4fe53f6e13 sudiksha-0A <sudikshachauhan0@gmail.com> 1732891221 +0530	commit (initial): Set up Express server and added pages
+ecc6ec55370ec3962a0f70da3fcf4b4fe53f6e13 635a3a4e394140eba010eb51e71add9434d90e7a sudiksha-0A <sudikshachauhan0@gmail.com> 1732892374 +0530	commit: Updated .gitignore
+635a3a4e394140eba010eb51e71add9434d90e7a 0a7798a9a9bcada1db8580c18e06ee3400fc6056 sudiksha-0A <sudikshachauhan0@gmail.com> 1732892502 +0530	commit: Your commit message
+0a7798a9a9bcada1db8580c18e06ee3400fc6056 8b2bc0742774ea3585a078cda63bddc34405ebb7 sudiksha-0A <sudikshachauhan0@gmail.com> 1732895833 +0530	commit: Fixed permission issues and re-added .gitignore
+8b2bc0742774ea3585a078cda63bddc34405ebb7 13d2f4d281de80ee91ff3f76a7f8e12115cf6db4 sudiksha-0A <sudikshachauhan0@gmail.com> 1732896296 +0530	commit: Recreate .gitignore file
+13d2f4d281de80ee91ff3f76a7f8e12115cf6db4 13d2f4d281de80ee91ff3f76a7f8e12115cf6db4 sudiksha-0A <sudikshachauhan0@gmail.com> 1732896418 +0530	Branch: renamed refs/heads/master to refs/heads/main
+13d2f4d281de80ee91ff3f76a7f8e12115cf6db4 13d2f4d281de80ee91ff3f76a7f8e12115cf6db4 sudiksha-0A <sudikshachauhan0@gmail.com> 1732903129 +0530	Branch: renamed refs/heads/main to refs/heads/main
+13d2f4d281de80ee91ff3f76a7f8e12115cf6db4 f61e77c73b26b16accdecd239e403abccb8b0dcc sudiksha-0A <sudikshachauhan0@gmail.com> 1732905115 +0530	commit: Updated index.html with additional changes
+f61e77c73b26b16accdecd239e403abccb8b0dcc 7ab51c264faf48be44f752d4885c6d31ca8394cd sudiksha-0A <sudikshachauhan0@gmail.com> 1732918879 +0530	commit: trail commit

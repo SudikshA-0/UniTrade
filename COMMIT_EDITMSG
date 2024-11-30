@@ -1,0 +1,22 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch Sudiksha
+# Changes to be committed:
+#	modified:   public/css/styles.css
+#	new file:   public/images/unnitfrade[1].png
+#	deleted:    src/app.js
+#	new file:   src/routes/app.js
+#	new file:   src/routes/browse.js
+#	modified:   src/routes/login.js
+#	modified:   src/routes/main.js
+#	new file:   src/routes/post-item.js
+#	deleted:    src/routes/postItem.js
+#	new file:   src/routes/register.js
+#	modified:   src/views/browse.html
+#	modified:   src/views/index.html
+#	modified:   src/views/login.html
+#	modified:   src/views/post-item.html
+#	modified:   src/views/register.html
+#
