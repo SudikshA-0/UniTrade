@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post an Item - UniTrade</title>
+    <link rel="stylesheet" href="/public/css/styles.css"> <!-- Link to styles -->
+</head>
+<body>
+    <!-- Navigation Bar (Reusing from the Landing Page) -->
+    <header>
+        <div class="logo">
+            <img src="/public/images/logo.png" alt="UniTrade Logo" width="120"> <!-- Replace with your logo image -->
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="post-item.html">Post an Item</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Create a New Account</a>
+
+        </nav>
+    </header>
+
+    <!-- Post an Item Form -->
+    <section class="post-item">
+        <h2>Post Your Item</h2>
+        <form action="#" method="post">
+            <label for="title">Item Title</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="category">Category</label>
+            <select id="category" name="category">
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+                <option value="carpool">Carpool</option>
+            </select>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="image">Item Image</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit" class="post-button">Post Item</button>
+        </form>
+    </section>
+
+    <!-- Footer Section (Reusing from the Landing Page) -->
+    <footer>
+        <p>UniTrade © 2024 - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
