@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Items - UniTrade</title>
+    <link rel="stylesheet" href="/public/css/styles.css"> <!-- Link to styles -->
+</head>
+<body>
+    <!-- Navigation Bar (Reusing from the Landing Page) -->
+    <header>
+        <div class="logo">
+            <img src="/public/images/logo.png" alt="UniTrade Logo" width="120"> <!-- Replace with your logo image -->
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="post-item.html">Post an Item</a>
+            <a href="login.html">Login / Signup</a>
+            <a href="register.html">Create a New Account</a>
+
+        </nav>
+    </header>
+
+    <!-- Browse Items Section -->
+    <section class="browse-items">
+        <h2>Browse Items</h2>
+        <div class="filters">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+                <option value="carpool">Carpool</option>
+            </select>
+            <button class="filter-btn">Apply Filter</button>
+        </div>
+
+        <div class="items-grid">
+            <!-- Example Item 1 -->
+            <div class="item-card">
+                <img src="https://via.placeholder.com/200" alt="Item Image"> <!-- Replace with item image -->
+                <h3>Item Title</h3>
+                <p>Description of the item goes here. Short description of item.</p>
+                <p class="price">₹500</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+
+            <!-- Example Item 2 -->
+            <div class="item-card">
+                <img src="https://via.placeholder.com/200" alt="Item Image"> <!-- Replace with item image -->
+                <h3>Item Title</h3>
+                <p>Description of the item goes here. Short description of item.</p>
+                <p class="price">₹1000</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+
+            <!-- Add more item cards dynamically -->
+        </div>
+    </section>
+
+    <!-- Footer Section (Reusing from the Landing Page) -->
+    <footer>
+        <p>UniTrade © 2024 - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
